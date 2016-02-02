@@ -29,11 +29,11 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
     }
 
     /**
-     * handle item click events
+     * handle item click events on navigation
      */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-    // TODO: start another fragment...
+    // TODO: start another fragment...and inflate new layout
     }
 
 
