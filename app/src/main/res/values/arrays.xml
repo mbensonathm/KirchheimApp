@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string-array name="list" >
+        <item name="Aktuelles"></item>
+        <item name="Info"></item>
+        <item name="Test3"></item>
+        <item name="Test4"></item>
+        <item name="Test5"></item>
+        <item name="Test6"></item>
+        <item name="Test7"></item>
+    </string-array>
+
+</resources>
