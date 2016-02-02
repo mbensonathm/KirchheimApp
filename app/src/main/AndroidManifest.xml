@@ -23,7 +23,7 @@
             android:name=".ImpressumActivity"
             android:label="@string/title_activity_impressum"
             android:parentActivityName=".MainPage"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/globalTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.elmedin.kirchheim.MainPage" />
