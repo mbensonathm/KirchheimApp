@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.elmedin.kirchheim" >
+    package="com.example.elmedin.kirchheim">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainPage"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,15 @@
         </activity>
         <activity
             android:name=".NavigationDrawer"
-            android:label="@string/title_activity_navigation_drawer" >
+            android:label="@string/title_activity_navigation_drawer"></activity>
+        <activity
+            android:name=".ImpressumActivity"
+            android:label="@string/title_activity_impressum"
+            android:parentActivityName=".MainPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.elmedin.kirchheim.MainPage" />
         </activity>
     </application>
 
