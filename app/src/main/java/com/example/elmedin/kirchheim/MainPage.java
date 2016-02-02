@@ -24,16 +24,16 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
         mTitles = getResources().getStringArray(R.array.list);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
-        mDrawerList.setAdapter(new ArrayAdapter<>(this, android.R.layout.activity_list_item, mTitles));
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.activity_list_item, android.R.id.text1, mTitles));
         mDrawerList.setOnItemClickListener(this);
     }
 
     /**
-     * handle item click events
+     * handle item click events on navigation
      */
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-    // TODO: start another fragment...
+    // TODO: start another fragment...and inflate new layout
     }
 
 
