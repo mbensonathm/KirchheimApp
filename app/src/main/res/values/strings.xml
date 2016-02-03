@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Kirchheim</string>
+    <string name="about_us">Über Kirchheim</string>
+    <string name="welcome">Willkommen</string>
+    <string name="news">Aktuell</string>
+    <string name="weather">Wetter</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

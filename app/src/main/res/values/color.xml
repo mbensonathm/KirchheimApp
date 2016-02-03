@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-
+    <color name="White">#FFFFFF</color>
+    <color name="mainGray">#333333</color>
     <color name="redTrans">#D9CC0000</color>
     <color name="grayTrans">#D9999999</color>
     <color name="darkTrans">#80333333</color>
-    <color name="White">#FFFFFF</color>
     <color name="Ivory">#FFFFF0</color>
     <color name="LightYellow">#FFFFE0</color>
     <color name="Yellow">#FFFF00</color>
