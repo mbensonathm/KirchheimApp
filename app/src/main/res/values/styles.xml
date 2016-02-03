@@ -5,7 +5,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-
     <style name="globalTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@drawable/bgr</item>
         <item name="windowActionBar">false</item>
@@ -22,6 +21,24 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="weatherLayout">
+        <item name="android:weightSum">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">5px</item>
+        <item name="android:layout_marginBottom">5px</item>
+        <item name="android:layout_marginRight">5px</item>
+        <item name="android:background">@color/darkTrans</item>
+    </style>
+
+    <style name="weatherImageView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">.4</item>
+        <item name="android:src">@drawable/sun</item>
+        <item name="android:paddingRight">20px</item>
+    </style>
 
     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@drawable/press</item>
@@ -29,4 +46,37 @@
 
 
 
+    <style name="weatherDegreeLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">.6</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="weatherDegreeTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.48</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+    <style name="weatherSeparatorImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.03</item>
+        <item name="android:background">@color/White</item>
+    </style>
+
+    <style name="weatherDesc">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_marginLeft">5px</item>
+        <item name="android:layout_marginRight">5px</item>
+        <item name="android:background">@color/darkTrans</item>
+    </style>
 </resources>
