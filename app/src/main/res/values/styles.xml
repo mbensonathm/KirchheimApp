@@ -1,24 +1,25 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!--<item name="android:textViewStyle">@style/CalistoViewStyle</item>-->
-        <!--<item name="android:buttonStyle">@style/CalistoButtonStyle</item>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
 
     </style>
 
     <style name="globalTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@drawable/bgr</item>
         <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="weatherLayout">
@@ -39,6 +40,12 @@
         <item name="android:src">@drawable/sun</item>
         <item name="android:paddingRight">20px</item>
     </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/press</item>
+    </style>
+
+
 
     <style name="weatherDegreeLayout">
         <item name="android:layout_width">0dp</item>
