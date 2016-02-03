@@ -18,10 +18,19 @@
         </activity>
         <activity
             android:name=".NavigationDrawer"
-            android:label="@string/title_activity_navigation_drawer"></activity>
+            android:label="@string/title_activity_navigation_drawer" />
         <activity
             android:name=".ImpressumActivity"
             android:label="@string/title_activity_impressum"
+            android:parentActivityName=".MainPage"
+            android:theme="@style/globalTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.elmedin.kirchheim.MainPage" />
+        </activity>
+        <activity
+            android:name=".LokaleActivity"
+            android:label="@string/title_activity_lokale"
             android:parentActivityName=".MainPage"
             android:theme="@style/globalTheme">
             <meta-data

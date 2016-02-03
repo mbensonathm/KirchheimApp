@@ -1,10 +1,12 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:textViewStyle">@style/CalistoViewStyle</item>
-        <item name="android:buttonStyle">@style/CalistoButtonStyle</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:textViewStyle">@style/CalistoViewStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/CalistoButtonStyle</item>-->
+
     </style>
+
     <style name="globalTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@drawable/bgr</item>
         <item name="windowActionBar">false</item>
@@ -53,6 +55,7 @@
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">@color/White</item>
     </style>
+
     <style name="weatherSeparatorImage">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
