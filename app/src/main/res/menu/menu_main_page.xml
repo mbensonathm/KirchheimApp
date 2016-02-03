@@ -8,4 +8,18 @@
     android:title="@string/action_settings"
     android:orderInCategory="100"
     app:showAsAction="never" />
+    <item android:id="@+id/karte"
+        android:title="Karte"/>
+    <item android:id="@+id/aktuelles"
+        android:title="Aktuelles"/>
+    <item android:id="@+id/lokal"
+        android:title="Lokalitäten und Dienstleistungen"/>
+    <item android:id="@+id/einrichtungen"
+        android:title="Öffentliche Einrichtungen"/>
+    <item android:id="@+id/favorites"
+        android:title="Favoriten"/>
+    <item android:id="@+id/weather"
+        android:title="Wetter"/>
+    <item android:id="@+id/tausch"
+        android:title="Tauschbörse"/>
 </menu>
