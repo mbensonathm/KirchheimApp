@@ -3,8 +3,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
     android:gravity="center_horizontal" android:orientation="vertical"
-    android:background="@drawable/main_bg">
-
+    android:background="@drawable/main_bg"
+    android:theme="@style/AppTheme"
+    >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -56,21 +57,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.75"
                 android:background="@color/grayTrans"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="fill_parent"
-                    android:layout_height="30dp"
-                    android:text="@string/news"
-                    android:textSize="24dp"
-                    android:textColor="@color/mainGray"
-                    android:gravity="top|center_horizontal"
-                    />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="fill_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
+                android:orientation="vertical"
+                >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -79,7 +67,8 @@
                         android:orientation="vertical"
                         android:layout_weight="1"
                         android:layout_marginLeft="10px"
-                        android:layout_marginRight="5px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginTop="20px"
                         android:layout_marginBottom="20px"
                         >
                         <TextView
@@ -91,7 +80,7 @@
                             android:background="@color/darkTrans"
                             android:text="News!"
                             android:textSize="15dp"
-                            android:gravity="center"
+                            android:gravity="left"
                             />
 
                         <ImageView
@@ -110,47 +99,6 @@
                             android:textSize="12dp"
                             />
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:weightSum="2"
-                        android:orientation="vertical"
-                        android:layout_weight="1"
-                        android:layout_marginRight="10px"
-                        android:layout_marginLeft="5px"
-                        android:layout_marginBottom="20px"
-                        >
-                        <TextView
-                            android:id="@+id/rightTitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:textColor="@color/White"
-                            android:background="@color/darkTrans"
-                            android:text="Bürgermeisterwahl!"
-                            android:textSize="15dp"
-                            android:gravity="center"
-                            />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="2dp"
-                            android:background="@color/Black"
-                            />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Neue Wahl des Bürgermeisters morgen."
-                            android:layout_weight="1"
-                            android:textColor="@color/White"
-                            android:background="@color/darkTrans"
-                            android:textSize="12dp"
-                            />
-                    </LinearLayout>
-
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -168,60 +116,105 @@
                 android:background="@color/grayTrans"
                 >
                 <LinearLayout
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginTop="20px"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="45dp"
                     android:weightSum="3"
                     android:orientation="horizontal"
+
                     >
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:textSize="24dp"
-                        android:gravity="top|center_horizontal"
-                        android:textColor="@color/mainGray"
-                        android:text="Heute"
+                        style="@style/weatherDesc"
+                        android:text="Heute \n 02.02.2020"
+                        android:layout_marginLeft="0px"
                         />
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:textSize="24dp"
-                        android:gravity="top|center_horizontal"
-                        android:textColor="@color/mainGray"
+                        style="@style/weatherDesc"
+                        android:text="Morgen \n 02.02.2020"
                         />
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:textSize="24dp"
-                        android:gravity="top|center_horizontal"
-                        android:textColor="@color/mainGray"
+                        style="@style/weatherDesc"
+                        android:text="Wieder Heute \n 02.02.2020"
+                        android:layout_marginRight="0px"
                         />
                 </LinearLayout>
                 <LinearLayout
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginBottom="20px"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:orientation="horizontal"
                     android:weightSum="3">
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
+                    <LinearLayout
+                        style="@style/weatherLayout"
+                        android:layout_marginLeft="0px">
 
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        <ImageView
+                            style="@style/weatherImageView"
+                            android:layout_weight=".5"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight=".5"
+                            android:text="-99°"
+                            android:textSize="15dp"
+                            android:textColor="@color/White"
+                            android:paddingTop="10dp"
+                            android:gravity="top|left"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/weatherLayout">
 
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-
-                    </RelativeLayout>
+                        <ImageView
+                            style="@style/weatherImageView"
+                            />
+                        <LinearLayout
+                            style="@style/weatherDegreeLayout"
+                            >
+                            <TextView
+                                style="@style/weatherDegreeTextView"
+                                android:paddingTop="10dp"
+                                android:gravity="center|bottom"
+                                android:text="max -99°C"
+                                />
+                            <ImageView
+                                style="@style/weatherSeparatorImage"/>
+                            <TextView
+                                style="@style/weatherDegreeTextView"
+                                android:text="min -99°C"
+                                android:gravity="center|top"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/weatherLayout"
+                        android:layout_marginRight="0px"
+                        >
+                        <ImageView
+                            style="@style/weatherImageView"
+                            />
+                        <LinearLayout
+                            style="@style/weatherDegreeLayout"
+                            >
+                            <TextView
+                                style="@style/weatherDegreeTextView"
+                                android:text="max -99°C"
+                                android:gravity="center|bottom"
+                                />
+                            <ImageView
+                                style="@style/weatherSeparatorImage"/>
+                            <TextView
+                                style="@style/weatherDegreeTextView"
+                                android:text="min -99°C"
+                                android:gravity="center|top"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
