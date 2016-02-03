@@ -9,10 +9,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainPage"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -23,7 +23,7 @@
             android:name=".ImpressumActivity"
             android:label="@string/title_activity_impressum"
             android:parentActivityName=".MainPage"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/globalTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.elmedin.kirchheim.MainPage" />
