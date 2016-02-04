@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.elmedin.kirchheim.weatherWidget.WeatherMediator;
+
 public class MainPage extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private String[] mTitles;
@@ -26,7 +28,10 @@ public class MainPage extends AppCompatActivity implements AdapterView.OnItemCli
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.activity_list_item, android.R.id.text1, mTitles));
         mDrawerList.setOnItemClickListener(this);
+
+        WeatherMediator.constructWeatherWidget();
     }
+
 
     /**
      * handle item click events on navigation
