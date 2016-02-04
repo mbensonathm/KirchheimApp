@@ -27,6 +27,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.elmedin.kirchheim.MainActivity" />
         </activity>
+        <activity
+            android:name=".LokaleActivity"
+            android:label="@string/title_activity_lokale"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/globalTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.elmedin.kirchheim.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
