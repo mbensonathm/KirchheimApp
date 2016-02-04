@@ -1,53 +1,12 @@
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainPage">
+    tools:context="com.example.navigationdrawer.MainActivity" >
 
-    <group android:checkableBehavior="single">
-
-<item
-    android:id="@+id/action_settings"
-    android:title="@string/action_settings"
-    android:orderInCategory="100"
-    app:showAsAction="never" />
-
-    <item android:id="@+id/karte"
-        android:title="Karte"/>
-
-    <item android:id="@+id/aktuelles"
-        android:title="Aktuelles"/>
-
-    <item android:id="@+id/lokalitäten_und_dienstleistungen"
-        android:title="Lokalitäten und Dienstleistungen"/>
-
-    <item android:id="@+id/öffentliche_einrichtungen"
-        android:title="Öffentliche Einrichtungen"/>
-
-    <item android:id="@+id/faforiten"
-        android:title="Favoriten"/>
-
-    <item android:id="@+id/wetter"
-        android:title="Wetter"/>
-
-    <item android:id="@+id/tauschbörse"
-        android:icon="@android:drawable/ic_menu_slideshow"
-        android:title="Tauschbörse"/>
-
-    <item android:id="@+id/galerie"
-        android:icon="@android:drawable/ic_menu_gallery"
-        android:title="Galerie"/>
-
-    <item android:id="@+id/kirchheim_tv"
-        android:title="Kirchheim TV"/>
-
-    <item android:id="@+id/notfallkontakte"
-        android:title="Notfallkontakte"/>
-
-    <item android:id="@+id/impressumText"
-        android:title="Impressum"/>
-
-
-    </group>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom"/>
 
 </menu>

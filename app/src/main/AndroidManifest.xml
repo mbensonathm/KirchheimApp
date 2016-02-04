@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.elmedin.kirchheim">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainPage"
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme.AppBarOverlay"
+            >
+            <!--android:theme="@style/AppTheme"-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,25 +21,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NavigationDrawer"
-            android:label="@string/title_activity_navigation_drawer" />
-        <activity
             android:name=".ImpressumActivity"
             android:label="@string/title_activity_impressum"
-            android:parentActivityName=".MainPage"
-            android:theme="@style/globalTheme">
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.elmedin.kirchheim.MainPage" />
+                android:value="com.example.elmedin.kirchheim.MainActivity" />
         </activity>
         <activity
             android:name=".LokaleActivity"
             android:label="@string/title_activity_lokale"
-            android:parentActivityName=".MainPage"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/globalTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.elmedin.kirchheim.MainPage" />
+                android:value="com.example.elmedin.kirchheim.MainActivity" />
         </activity>
         <activity
             android:name=".MenuActivity"
