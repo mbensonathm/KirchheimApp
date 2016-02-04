@@ -1,7 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:itemIconTint="@color/White"
     tools:context="com.example.elmedin.kirchheim.NavigationDrawer">
+
     <item
         android:id="@+id/action_example"
         android:title="@string/action_example"
