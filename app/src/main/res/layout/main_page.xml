@@ -1,0 +1,244 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/main_bg">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/topLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/redTrans"
+                        android:layout_marginTop="70dp"/>
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo" />
+
+                    <TextView
+                        android:id="@+id/history"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="140dp"
+                        android:text="@string/about_us"
+                        android:gravity="top|center_horizontal"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight=".5"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:background="@color/grayTrans"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginRight="10px"
+                            android:layout_marginTop="20px"
+                            android:layout_marginBottom="20px">
+
+                            <TextView
+                                android:id="@+id/leftTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/White"
+                                android:background="@color/darkTrans"
+                                android:text="News!"
+                                android:textSize="15dp"
+                                android:gravity="left"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/Black"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="News."
+                                android:layout_weight="1"
+                                android:textColor="@color/White"
+                                android:background="@color/darkTrans"
+                                android:textSize="12dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.45">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:background="@color/grayTrans"
+                        >
+                        <LinearLayout
+                            android:layout_marginLeft="10px"
+                            android:layout_marginRight="10px"
+                            android:layout_marginTop="20px"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:weightSum="3"
+                            android:orientation="horizontal"
+
+                            >
+                            <TextView
+                                style="@style/weatherDesc"
+                                android:text="Heute \n 02.02.2020"
+                                android:layout_marginLeft="0px"
+                                />
+                            <TextView
+                                style="@style/weatherDesc"
+                                android:text="Morgen \n 02.02.2020"
+                                />
+                            <TextView
+                                style="@style/weatherDesc"
+                                android:text="Wieder Heute \n 02.02.2020"
+                                android:layout_marginRight="0px"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginLeft="10px"
+                            android:layout_marginRight="10px"
+                            android:layout_marginBottom="20px"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+                            <LinearLayout
+                                style="@style/weatherLayout"
+                                android:layout_marginLeft="0px">
+
+                                <ImageView
+                                    style="@style/weatherImageView"
+                                    android:layout_weight=".5"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight=".5"
+                                    android:text="-99°"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/White"
+                                    android:paddingTop="10dp"
+                                    android:gravity="top|left"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                style="@style/weatherLayout">
+
+                                <ImageView
+                                    style="@style/weatherImageView"
+                                    />
+                                <LinearLayout
+                                    style="@style/weatherDegreeLayout"
+                                    >
+                                    <TextView
+                                        style="@style/weatherDegreeTextView"
+                                        android:paddingTop="10dp"
+                                        android:gravity="center|bottom"
+                                        android:text="max -99°C"
+                                        />
+                                    <ImageView
+                                        style="@style/weatherSeparatorImage"/>
+                                    <TextView
+                                        style="@style/weatherDegreeTextView"
+                                        android:text="min -99°C"
+                                        android:gravity="center|top"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                style="@style/weatherLayout"
+                                android:layout_marginRight="0px"
+                                >
+                                <ImageView
+                                    style="@style/weatherImageView" />
+
+                                <LinearLayout
+                                    style="@style/weatherDegreeLayout"
+                                    >
+                                    <TextView
+                                        style="@style/weatherDegreeTextView"
+                                        android:text="max -99°C"
+                                        android:gravity="center|bottom"
+                                        />
+                                    <ImageView
+                                        style="@style/weatherSeparatorImage"/>
+                                    <TextView
+                                        style="@style/weatherDegreeTextView"
+                                        android:text="min -99°C"
+                                        android:gravity="center|top"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/drawer_list"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111" >
+
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>
