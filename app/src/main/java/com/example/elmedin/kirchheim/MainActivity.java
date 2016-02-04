@@ -13,10 +13,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.elmedin.kirchheim.weatherWidget.WeatherMediator;
 
 
-
-   public class MainActivity extends Activity {
+public class MainActivity extends Activity {
 
     DrawerLayout mDrawerLayout;
     ListView mDrawerList;
@@ -91,6 +91,8 @@ import android.widget.ListView;
             }
 
         });
+
+        WeatherMediator.constructWeatherWidget();
     }
 
     @Override

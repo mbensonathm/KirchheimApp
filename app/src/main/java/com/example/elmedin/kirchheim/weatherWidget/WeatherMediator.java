@@ -8,9 +8,6 @@ import com.example.elmedin.kirchheim.weatherWidget.reader.RSSFeedReader;
  * Created by Michael on 04.02.2016.
  */
 public class WeatherMediator {
-    public static void main(String[] args) {
-        constructWeatherWidget();
-    }
     public static void constructWeatherWidget() {
         try {
             WeatherFeed weatherFeed = RSSFeedReader.retrieveWeatherFeed(HttpRequestBuilder.retrieveInputStreamFromGet("http://weather.yahooapis.com/forecastrss?w=12837072&u=c"));
